@@ -3,26 +3,26 @@ export function Process() {
   const steps = [
     {
       id: 1,
-      title: "Discovery",
-      description: "Understanding your needs and objectives through deep analysis",
+      title: "Keşif",
+      description: "Derinlemesine analiz ile ihtiyaç ve hedeflerinizi anlama",
       number: "01"
     },
     {
       id: 2,
-      title: "Strategy",
-      description: "Developing a comprehensive plan to achieve your goals",
+      title: "Strateji",
+      description: "Hedeflerinize ulaşmak için kapsamlı bir plan geliştirme",
       number: "02"
     },
     {
       id: 3,
-      title: "Creation",
-      description: "Bringing ideas to life with creative excellence",
+      title: "Üretim",
+      description: "Yaratıcı mükemmellikle fikirleri hayata geçirme",
       number: "03"
     },
     {
       id: 4,
-      title: "Delivery",
-      description: "Implementing solutions with precision and care",
+      title: "Teslimat",
+      description: "Çözümleri hassasiyet ve özenle uygulama",
       number: "04"
     }
   ];
@@ -30,7 +30,7 @@ export function Process() {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">Our Process</h2>
+        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">Çalışma Sürecimiz</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {steps.map((step) => (
             <div key={step.id} className="relative group">

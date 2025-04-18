@@ -3,16 +3,16 @@ export function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      quote: "Working with this agency has transformed our brand completely. Their AI-powered solutions are revolutionary.",
-      author: "Sarah Johnson",
+      quote: "Bu ajansla çalışmak markamızı tamamen dönüştürdü. Yapay zeka destekli çözümleri devrim niteliğinde.",
+      author: "Ayşe Yılmaz",
       position: "CEO, TechStart",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format"
     },
     {
       id: 2,
-      quote: "Their creative approach and attention to detail made our project stand out in the market.",
-      author: "Michael Chen",
-      position: "Marketing Director, InnovateCo",
+      quote: "Yaratıcı yaklaşımları ve detaylara gösterdikleri özen, projemizin pazarda öne çıkmasını sağladı.",
+      author: "Mehmet Demir",
+      position: "Pazarlama Direktörü, InnovateCo",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format"
     }
   ];
@@ -20,7 +20,7 @@ export function Testimonials() {
   return (
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">Client Stories</h2>
+        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">Müşteri Hikayeleri</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">

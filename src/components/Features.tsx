@@ -3,26 +3,26 @@ export function Features() {
   const features = [
     {
       id: 1,
-      title: "AI Integration",
-      description: "Cutting-edge artificial intelligence solutions for your creative needs",
+      title: "Yapay Zeka Entegrasyonu",
+      description: "Yaratıcı ihtiyaçlarınız için en son yapay zeka çözümleri",
       icon: "🤖",
     },
     {
       id: 2,
-      title: "Creative Design",
-      description: "Unique and innovative design approaches that set you apart",
+      title: "Yaratıcı Tasarım",
+      description: "Sizi öne çıkaran benzersiz ve yenilikçi tasarım yaklaşımları",
       icon: "🎨",
     },
     {
       id: 3,
-      title: "Digital Strategy",
-      description: "Comprehensive digital strategies for market success",
+      title: "Dijital Strateji",
+      description: "Pazar başarısı için kapsamlı dijital stratejiler",
       icon: "📊",
     },
     {
       id: 4,
-      title: "Brand Development",
-      description: "Build and evolve your brand identity with our expertise",
+      title: "Marka Geliştirme",
+      description: "Uzmanlığımızla marka kimliğinizi oluşturun ve geliştirin",
       icon: "✨",
     }
   ];
@@ -30,7 +30,7 @@ export function Features() {
   return (
     <section className="py-24 bg-gradient-to-b from-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">What We Offer</h2>
+        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">Neler Sunuyoruz</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
             <div 

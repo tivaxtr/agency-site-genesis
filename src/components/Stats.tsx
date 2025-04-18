@@ -1,10 +1,10 @@
 
 export function Stats() {
   const stats = [
-    { id: 1, number: "150+", label: "Projects Completed" },
-    { id: 2, number: "50+", label: "Team Members" },
-    { id: 3, number: "10+", label: "Years Experience" },
-    { id: 4, number: "98%", label: "Client Satisfaction" }
+    { id: 1, number: "150+", label: "Tamamlanan Proje" },
+    { id: 2, number: "50+", label: "Ekip Üyesi" },
+    { id: 3, number: "10+", label: "Yıl Deneyim" },
+    { id: 4, number: "98%", label: "Müşteri Memnuniyeti" }
   ];
 
   return (
