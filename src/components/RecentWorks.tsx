@@ -1,28 +1,29 @@
 
 export function RecentWorks() {
+  // Yeni Türkçe çalışmalar ve güncel görseller
   const works = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format",
-      title: "Yapay Zeka ile Grafik Tasarım",
-      desc: "Prompt bazlı hızlı ve özgün grafik üretimi."
+      image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&auto=format",
+      title: "Kişiye Özel İçerik Takvimi",
+      desc: "Markanızın hedef kitlesine özel, güçlü etkileşim odaklı içerik takvimleri oluşturuyorum.",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&auto=format",
-      title: "Duygusal İçerik Planları",
-      desc: "Haftalara bölünmüş, duygusal tetikleyicilere göre optimize edilmiş sosyal medya takvimi."
+      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=800&auto=format",
+      title: "Yapay Zeka ile Görsel Üretimi",
+      desc: "Hızlı ve özgün sosyal medya görsellerini yapay zeka ile dakikalar içinde hazırlıyorum.",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format",
-      title: "Instagram Profil Simülasyonu",
-      desc: "Markanız için özel, önceden oluşturulmuş Instagram profil örneği."
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&auto=format",
+      title: "Gerçek Zamanlı Trend Analizi",
+      desc: "Trend analizleriyle öne çıkan, markanızı sektörün gündemine taşıyan içerikler sunuyorum.",
     },
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50" id="works">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in">Son Çalışmalarım</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -44,4 +45,3 @@ export function RecentWorks() {
     </section>
   );
 }
-

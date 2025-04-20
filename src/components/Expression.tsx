@@ -3,28 +3,28 @@ export function Expression() {
   const categories = [
     {
       id: 1,
-      title: "Hızlı Dijital Tasarım",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&auto=format",
-      desc: "Yapay zeka ile özgün görsellerin dakikalar içinde hazırlaması."
+      title: "Yapay Zeka Destekli Tasarım",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format",
+      desc: "Dakikalar içinde özgün ve etkileyici tasarımlar, tamamen yapay zeka desteğiyle hazırlanır.",
     },
     {
       id: 2,
-      title: "İçerik Stratejisi",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format",
-      desc: "Markaya özel test edilmiş içerik stratejileri."
+      title: "Hızlı İçerik Üretimi",
+      image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&auto=format",
+      desc: "Birbirinden farklı ve yaratıcı içerikleri, zamandan tasarruf ederek hızlıca üretiyorum.",
     },
     {
       id: 3,
-      title: "Kar Ortaklığı Modeli",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format",
-      desc: "Büyümenize tamamen ortak, samimi bir işbirliği süreci."
+      title: "Stratejik Raporlama",
+      image: "https://images.unsplash.com/photo-1511203466129-824e631920d4?w=800&auto=format",
+      desc: "Tüm süreçler şeffaf analizlerle raporlanır, başarı metrikleri netleşir.",
     },
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20" id="ai-processes">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in">Neler Sunuyorum?</h2>
+        <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in">Neleri Farklı Yapıyorum?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
             <div key={category.id} className="group relative overflow-hidden rounded-2xl shadow hover:shadow-lg transition-shadow animate-fade-in">
@@ -44,4 +44,3 @@ export function Expression() {
     </section>
   );
 }
-
