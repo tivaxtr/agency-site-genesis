@@ -3,26 +3,26 @@ export function Process() {
   const steps = [
     {
       id: 1,
-      title: "Keşif",
-      description: "Derinlemesine analiz ile ihtiyaç ve hedeflerinizi anlama",
+      title: "Marka Analizi",
+      description: "Markanızın özünü ve hedef kitlenizin duygusal ihtiyaçlarını derinlemesine analiz ediyoruz",
       number: "01"
     },
     {
       id: 2,
-      title: "Strateji",
-      description: "Hedeflerinize ulaşmak için kapsamlı bir plan geliştirme",
+      title: "İçerik Planlaması",
+      description: "4 haftalık detaylı içerik planı ile farklı duygusal tetikleyicileri test ediyoruz",
       number: "02"
     },
     {
       id: 3,
-      title: "Üretim",
-      description: "Yaratıcı mükemmellikle fikirleri hayata geçirme",
+      title: "Görsel Tasarım",
+      description: "Yapay zeka ile markanızın gelecekteki Instagram görünümünü tasarlıyoruz",
       number: "03"
     },
     {
       id: 4,
-      title: "Teslimat",
-      description: "Çözümleri hassasiyet ve özenle uygulama",
+      title: "Uygulama ve Ölçüm",
+      description: "Belirlenen stratejiyi uygulayıp, sonuçları haftalık olarak analiz ediyoruz",
       number: "04"
     }
   ];

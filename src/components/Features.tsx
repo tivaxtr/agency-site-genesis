@@ -3,27 +3,27 @@ export function Features() {
   const features = [
     {
       id: 1,
-      title: "Yapay Zeka Entegrasyonu",
-      description: "Yaratıcı ihtiyaçlarınız için en son yapay zeka çözümleri",
-      icon: "🤖",
+      title: "Duygusal Analiz",
+      description: "Markanıza en uygun duygusal tetikleyicileri belirleme ve test etme",
+      icon: "❤️"
     },
     {
       id: 2,
-      title: "Yaratıcı Tasarım",
-      description: "Sizi öne çıkaran benzersiz ve yenilikçi tasarım yaklaşımları",
-      icon: "🎨",
+      title: "İçerik Takvimi",
+      description: "4 haftalık detaylı içerik planı ve duygusal yolculuk haritası",
+      icon: "📅"
     },
     {
       id: 3,
-      title: "Dijital Strateji",
-      description: "Pazar başarısı için kapsamlı dijital stratejiler",
-      icon: "📊",
+      title: "Kar Ortaklığı",
+      description: "Başarınıza ortak oluyoruz - büyümeniz bizim önceliğimiz",
+      icon: "🤝"
     },
     {
       id: 4,
-      title: "Marka Geliştirme",
-      description: "Uzmanlığımızla marka kimliğinizi oluşturun ve geliştirin",
-      icon: "✨",
+      title: "Görsel Önizleme",
+      description: "Yapay zeka ile Instagram profil görünümünüzün simülasyonu",
+      icon: "🎨"
     }
   ];
 
