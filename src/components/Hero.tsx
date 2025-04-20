@@ -1,6 +1,6 @@
 
 import { Button } from "./ui/button";
-import { ArrowRight, Zap, Robot } from "lucide-react";
+import { ArrowRight, Zap, Bot } from "lucide-react";
 
 export function Hero() {
   return (
@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 text-purple-600 mb-4 animate-fade-in">
-            <Robot size={24} />
+            <Bot size={24} />
             <p>Yapay Zeka Destekli Sosyal Medya Yönetimi</p>
             <Zap size={24} />
           </div>
