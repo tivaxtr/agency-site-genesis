@@ -3,26 +3,26 @@ export function Process() {
   const steps = [
     {
       id: 1,
-      title: "Marka Analizi",
-      description: "Markanızın özünü ve hedef kitlenizin duygusal ihtiyaçlarını derinlemesine analiz ediyoruz",
+      title: "AI Marka Analizi",
+      description: "Yapay zeka ile markanızın özünü ve hedef kitlenizin duygusal ihtiyaçlarını dakikalar içinde analiz ediyorum",
       number: "01"
     },
     {
       id: 2,
-      title: "İçerik Planlaması",
-      description: "4 haftalık detaylı içerik planı ile farklı duygusal tetikleyicileri test ediyoruz",
+      title: "Hızlı Planlama",
+      description: "GPT-4 ile içerik planını ve duygusal tetikleyicileri saatler içinde belirliyorum",
       number: "02"
     },
     {
       id: 3,
-      title: "Görsel Tasarım",
-      description: "Yapay zeka ile markanızın gelecekteki Instagram görünümünü tasarlıyoruz",
+      title: "AI Görsel Üretimi",
+      description: "Stable Diffusion ile markanıza özel görseller ve Instagram simülasyonunu anında oluşturuyorum",
       number: "03"
     },
     {
       id: 4,
-      title: "Uygulama ve Ölçüm",
-      description: "Belirlenen stratejiyi uygulayıp, sonuçları haftalık olarak analiz ediyoruz",
+      title: "Sonuç Odaklı Takip",
+      description: "Yapay zeka destekli analiz araçlarıyla performansı gerçek zamanlı ölçümlüyorum",
       number: "04"
     }
   ];

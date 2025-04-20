@@ -3,20 +3,20 @@ export function Services() {
   const services = [
     {
       id: 1,
-      title: "Duygusal Pazarlama Stratejisi",
-      description: "Markanızın hikayesini analiz ederek, hedef kitlenizle duygusal bağ kuracak özel stratejiler geliştiriyoruz",
+      title: "AI Destekli Pazarlama",
+      description: "GPT-4 ve özel yapay zeka modelleri ile markanızın hikayesini analiz ediyor, hedef kitlenizle duygusal bağ kuracak stratejiler geliştiriyorum",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format"
     },
     {
       id: 2,
-      title: "Kar Ortaklığı Modeli",
-      description: "Başarınız bizim başarımız. Geleneksel ücretlendirmenin yanında, büyümenize ortak oluyoruz",
+      title: "Büyüme Ortaklığı",
+      description: "Başarınız benim başarım. Yapay zeka ile hızlandırılmış büyüme sürecinize ortak oluyorum",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format"
     },
     {
       id: 3,
-      title: "Görsel Marka Tasarımı",
-      description: "Yapay zeka ile markanızın Instagram profilini görselleştiriyor, geleceğe dair net bir vizyon sunuyoruz",
+      title: "AI Görsel Tasarım",
+      description: "Stable Diffusion ve DALL-E ile markanızın Instagram profilini görselleştiriyor, geleceğe dair net bir vizyon sunuyorum",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format"
     }
   ];
