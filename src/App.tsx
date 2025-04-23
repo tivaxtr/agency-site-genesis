@@ -11,7 +11,6 @@ import AiProcesses from "./pages/AiProcesses";
 import References from "./pages/References";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { Header } from "@/components/Header";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +21,6 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Header />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/hakkimda" element={<About />} />

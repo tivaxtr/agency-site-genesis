@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card";
 
 export function Process() {
   const steps = [
@@ -28,25 +29,27 @@ export function Process() {
   ];
 
   return (
-    <section className="py-24">
+    <section className="py-24 bg-gradient-to-b from-robot-background to-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16">Çalışma Sürecimiz</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {steps.map((step) => (
-            <div key={step.id} className="relative group">
-              <div className="text-8xl font-playfair text-gray-100 absolute -top-10 -left-6 z-0">
-                {step.number}
+        <Card className="w-full bg-black/[0.96] relative overflow-hidden rounded-xl mb-12 p-8">
+          <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16 text-white">Çalışma Sürecimiz</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {steps.map((step) => (
+              <div key={step.id} className="relative group bg-black/70 rounded-2xl p-8 flex flex-col items-center text-center">
+                <div className="text-8xl font-playfair text-gray-100 absolute -top-10 -left-6 z-0 opacity-30">
+                  {step.number}
+                </div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-playfair mb-4 group-hover:text-purple-600 transition-colors text-robot-purple">{step.title}</h3>
+                  <p className="text-gray-300">{step.description}</p>
+                </div>
               </div>
-              <div className="relative z-10">
-                <h3 className="text-2xl font-playfair mb-4 group-hover:text-purple-600 transition-colors">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600">{step.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Card>
       </div>
     </section>
   );
 }
+
+export default Process;

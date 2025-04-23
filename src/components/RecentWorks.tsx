@@ -1,5 +1,5 @@
-
 import { Calendar, Image, TrendingUp, Brain, Cpu, Database } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 export function RecentWorks() {
   const works = [
@@ -24,22 +24,24 @@ export function RecentWorks() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-robot-background to-black" id="works">
+    <section className="py-24 bg-gradient-to-b from-robot-background to-black" id="works">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in text-white">Son Çalışmalarım</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {works.map((work) => (
-            <div key={work.id} className="group p-8 rounded-2xl bg-black/50 shadow-lg hover:shadow-robot-purple/20 transition-all duration-300 animate-fade-in">
-              <div className="flex flex-col items-center text-center">
+        <Card className="w-full bg-black/[0.96] relative overflow-hidden rounded-xl mb-12 p-8">
+          <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in text-white text-center">Son Çalışmalarım</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {works.map((work) => (
+              <div key={work.id} className="group p-8 rounded-2xl bg-black/70 shadow-lg hover:shadow-robot-purple/20 transition-all duration-300 animate-fade-in flex flex-col items-center text-center">
                 {work.icon}
                 <h3 className="text-robot-purple text-xl font-playfair mb-3">{work.title}</h3>
                 <p className="text-gray-300">{work.desc}</p>
                 <div className="h-1 w-0 group-hover:w-1/2 bg-robot-purple mt-4 transition-all duration-300"></div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Card>
       </div>
     </section>
   );
 }
+
+export default RecentWorks;

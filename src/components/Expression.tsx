@@ -1,5 +1,5 @@
-
 import { Lightbulb, Clock, PieChart, Palette, Brain, Code } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 export function Expression() {
   const categories = [
@@ -24,21 +24,23 @@ export function Expression() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-robot-background" id="ai-processes">
+    <section className="py-24 bg-gradient-to-b from-robot-background to-black" id="ai-processes">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in text-white">Neleri Farklı Yapıyorum?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {categories.map((category) => (
-            <div key={category.id} className="group p-8 rounded-2xl bg-black/50 shadow-lg hover:shadow-robot-purple/20 transition-all duration-300 animate-fade-in">
-              <div className="flex flex-col items-center text-center">
+        <Card className="w-full bg-black/[0.96] relative overflow-hidden rounded-xl mb-12 p-8">
+          <h2 className="text-4xl md:text-5xl font-playfair mb-12 animate-fade-in text-white text-center">Neleri Farklı Yapıyorum?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {categories.map((category) => (
+              <div key={category.id} className="group p-8 rounded-2xl bg-black/70 shadow-lg hover:shadow-robot-purple/20 transition-all duration-300 animate-fade-in flex flex-col items-center text-center">
                 {category.icon}
                 <h3 className="text-robot-purple text-xl font-playfair mb-3">{category.title}</h3>
                 <p className="text-gray-300">{category.desc}</p>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Card>
       </div>
     </section>
   );
 }
+
+export default Expression;

@@ -1,4 +1,3 @@
-
 export function About() {
   return (
     <section className="py-24 bg-gray-50">
@@ -38,3 +37,5 @@ export function About() {
     </section>
   );
 }
+
+export default About;

@@ -1,5 +1,5 @@
-
 import { Helmet } from "react-helmet-async";
+import { Briefcase, Utensils, Sparkles } from "lucide-react";
 
 export default function Works() {
   const works = [
@@ -7,19 +7,19 @@ export default function Works() {
       id: 1,
       title: "E-ticaret Marka Stratejisi",
       description: "Yapay zeka destekli içerik stratejisi ile 3 ayda %150 etkileşim artışı",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format"
+      icon: <Briefcase size={64} className="text-robot-purple mb-6" />
     },
     {
       id: 2,
       title: "Restoran Zinciri Sosyal Medya Yönetimi",
       description: "AI görsel üretimi ile aylık içerik üretim süresinde %75 azalma",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format"
+      icon: <Utensils size={64} className="text-robot-purple mb-6" />
     },
     {
       id: 3,
       title: "Kozmetik Markası Dönüşümü",
       description: "GPT-4 destekli kopya yazımı ile satış dönüşüm oranında %80 artış",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&auto=format"
+      icon: <Sparkles size={64} className="text-robot-purple mb-6" />
     }
   ];
 
@@ -35,16 +35,10 @@ export default function Works() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {works.map((work) => (
-            <div key={work.id} className="group relative overflow-hidden rounded-2xl shadow-lg">
-              <img 
-                src={work.image}
-                alt={work.title}
-                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
-                <h3 className="text-white text-xl font-playfair mb-4">{work.title}</h3>
-                <p className="text-gray-200">{work.description}</p>
-              </div>
+            <div key={work.id} className="group relative overflow-hidden rounded-2xl shadow-lg bg-white flex flex-col items-center justify-center p-8 min-h-[400px]">
+              <div className="mb-6">{work.icon}</div>
+              <h3 className="text-xl font-playfair mb-4 text-robot-purple">{work.title}</h3>
+              <p className="text-gray-700 text-center">{work.description}</p>
             </div>
           ))}
         </div>

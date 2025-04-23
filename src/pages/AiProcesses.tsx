@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import { Bot, Zap, Brain, BarChart } from "lucide-react";
 
@@ -61,11 +60,9 @@ export default function AiProcesses() {
               </ul>
             </div>
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&auto=format" 
-                alt="Yapay Zeka Süreçleri"
-                className="rounded-xl"
-              />
+              <div className="flex items-center justify-center w-full h-48 bg-purple-100 rounded-xl">
+                <Brain className="w-20 h-20 text-purple-600" />
+              </div>
             </div>
           </div>
         </div>

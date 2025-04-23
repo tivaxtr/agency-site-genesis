@@ -1,30 +1,31 @@
-
+import React, { Suspense, lazy } from "react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
-import { Features } from "@/components/Features";
-import { Services } from "@/components/Services";
-import { Process } from "@/components/Process";
-import { Stats } from "@/components/Stats";
-import { RecentWorks } from "@/components/RecentWorks";
-import { Expression } from "@/components/Expression";
-import { Testimonials } from "@/components/Testimonials";
-import { Contact } from "@/components/Contact";
+
+const Features = lazy(() => import("@/components/Features"));
+const Services = lazy(() => import("@/components/Services"));
+const Process = lazy(() => import("@/components/Process"));
+const Stats = lazy(() => import("@/components/Stats"));
+const RecentWorks = lazy(() => import("@/components/RecentWorks"));
+const Expression = lazy(() => import("@/components/Expression"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const Contact = lazy(() => import("@/components/Contact"));
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <Features />
-      <About />
-      <Services />
-      <Process />
-      <Stats />
-      <RecentWorks />
-      <Expression />
-      <Testimonials />
-      <Contact />
+      <Suspense fallback={<div className="text-center py-12">Yükleniyor...</div>}>
+        <Features />
+        <Services />
+        <Process />
+        <Stats />
+        <RecentWorks />
+        <Expression />
+        <Testimonials />
+        <Contact />
+      </Suspense>
     </div>
   );
 };

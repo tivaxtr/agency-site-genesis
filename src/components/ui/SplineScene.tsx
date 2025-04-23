@@ -1,4 +1,3 @@
-
 'use client'
 
 import { Suspense, lazy, useState, useEffect } from 'react'
@@ -11,24 +10,16 @@ interface SplineSceneProps {
 
 export function SplineScene({ scene, className }: SplineSceneProps) {
   const [isVisible, setIsVisible] = useState(false);
-  
   useEffect(() => {
-    // Only load the 3D scene when it's likely to be in viewport
-    const observer = new IntersectionObserver(
+    const container = document.getElementById('spline-container');
+    if (!container) return;
+    const observer = new window.IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
+        setIsVisible(entry.isIntersecting);
       },
       { threshold: 0.1 }
     );
-    
-    const container = document.getElementById('spline-container');
-    if (container) {
-      observer.observe(container);
-    }
-    
+    observer.observe(container);
     return () => observer.disconnect();
   }, []);
 
@@ -47,11 +38,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
             className={className}
           />
         </Suspense>
-      ) : (
-        <div className="w-full h-full flex items-center justify-center">
-          <span className="loader"></span>
-        </div>
-      )}
+      ) : null}
     </div>
   )
 }

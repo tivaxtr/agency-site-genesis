@@ -1,62 +1,19 @@
-
-import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { Card } from "@/components/ui/card";
 
 export function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const navLinks = [
-    { to: "/hakkimda", label: "HAKKIMDA" },
-    { to: "/calismalarim", label: "ÇALIŞMALARIM" },
-    { to: "/yapay-zeka-surecleri", label: "YAPAY ZEKA SÜREÇLERİ" },
-    { to: "/referanslar", label: "REFERANSLAR" },
-    { to: "/iletisim", label: "İLETİŞİM" },
-  ];
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <NavLink to="/" className="text-xl sm:text-2xl font-playfair font-bold">
-          Ömür Sosyal Medya
-        </NavLink>
-        {/* Masaüstü Menü */}
-        <nav className="hidden md:flex items-center gap-4 lg:gap-8 text-sm font-medium">
-          {navLinks.map(link => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className={({ isActive }) =>
-                `hover:text-gray-600 transition-colors whitespace-nowrap ${isActive ? "text-blue-600 font-bold" : ""}`
-              }
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </nav>
-        {/* Mobil Menü Butonu */}
-        <button className="md:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü Aç/Kapat">
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-      {/* Mobil Menü */}
-      {mobileOpen && (
-        <nav className="md:hidden bg-white/95 backdrop-blur-sm absolute top-full left-0 w-full flex flex-col items-center gap-2 py-4 shadow-lg z-50 animate-fade-in">
-          {navLinks.map(link => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className={({ isActive }) =>
-                `block w-full text-center py-3 hover:text-gray-600 transition-colors ${isActive ? "text-blue-600 font-bold" : ""}`
-              }
-              onClick={() => setMobileOpen(false)}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </nav>
-      )}
-      <div className="w-full bg-gradient-to-r from-purple-100 to-blue-100 text-center py-1 text-xs text-gray-800">
-        Bu web sitesi sıfır kod bilgisiyle, tamamen yapay zeka araçları kullanılarak hazırlanmıştır.
-      </div>
+    <header className="w-full bg-black/[0.96] shadow-lg sticky top-0 z-50">
+      <nav className="container mx-auto px-4 flex items-center justify-between h-20 relative">
+        <div className="flex items-center gap-3">
+          <span className="text-2xl font-playfair font-bold text-robot-purple tracking-tight">Ömür Can Ayhan</span>
+        </div>
+        <ul className="flex gap-6 items-center">
+          <li><a href="#works" className="text-gray-300 hover:text-robot-accent transition-colors font-medium">Çalışmalar</a></li>
+          <li><a href="#services" className="text-gray-300 hover:text-robot-accent transition-colors font-medium">Hizmetler</a></li>
+          <li><a href="#ai-processes" className="text-gray-300 hover:text-robot-accent transition-colors font-medium">AI Süreçleri</a></li>
+          <li><a href="#contact" className="text-gray-300 hover:text-robot-accent transition-colors font-medium">İletişim</a></li>
+        </ul>
+      </nav>
     </header>
   );
 }

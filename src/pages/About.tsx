@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Bot } from "lucide-react";
 
 export default function About() {
   return (
@@ -12,11 +13,9 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-playfair mb-8 text-center">Hakkımda</h1>
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-1/2 flex flex-col items-center">
-            <img 
-              src="/lovable-uploads/1e2da65b-1541-48b4-8abf-2ac892ecffd7.png" 
-              alt="Ömür Can Ayhan - Dijital Pazarlama ve Sosyal Medya Uzmanı, profesyonel iş dünyası portresi"
-              className="rounded-2xl shadow-2xl w-full max-w-md mb-6 md:mb-0 border-4 border-purple-100 object-cover object-center"
-            />
+            <div className="flex items-center justify-center w-full max-w-md mb-6 md:mb-0 h-64">
+              <Bot size={120} className="text-robot-purple" />
+            </div>
             <div className="flex gap-4 mt-6">
               <div className="bg-white rounded-xl shadow p-4 text-center">
                 <h3 className="text-2xl font-bold text-purple-700 mb-1">250+</h3>
