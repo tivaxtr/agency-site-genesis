@@ -6,7 +6,7 @@ export interface SpotlightProps {
   fill?: string;
 }
 
-export function Spotlight({ className, fill = "white" }: SpotlightProps) {
+export function Spotlight({ className, fill = "#9b87f5" }: SpotlightProps) {
   return (
     <svg
       className={cn("animate-spotlight pointer-events-none absolute z-[1] h-[169%] w-[138%] opacity-0", className)}

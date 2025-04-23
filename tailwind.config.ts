@@ -56,6 +56,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        robot: {
+          purple: "#9b87f5",
+          darkPurple: "#7E69AB",
+          background: "#1A1F2C",
+          accent: "#D6BCFA",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,6 +72,8 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        "fade-in": "fadeIn 0.6s ease-out forwards",
+        "slide-in": "slideIn 0.5s ease-out forwards",
       },
       keyframes: {
         spotlight: {
@@ -76,6 +84,26 @@ export default {
           "100%": {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+        fadeIn: {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideIn: {
+          from: {
+            transform: "translateX(-20px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateX(0)",
+            opacity: "1",
           },
         },
       },
